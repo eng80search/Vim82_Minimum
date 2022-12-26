@@ -49,6 +49,20 @@ set hlsearch
 set ignorecase
 set cursorline
 
+" ディレクトリ作成関数
+function! s:auto_mkdir(dir)
+    if !isdirectory(a:dir)
+      echo 'create directory ' . a:dir
+      call mkdir(iconv(a:dir, &encoding, &termencoding), 'p')
+    endif
+endfunction
+
+" 必要なディレクトリを作成
+call s:auto_mkdir('tmp/backup/')
+call s:auto_mkdir('tmp/viminfo/')
+call s:auto_mkdir('tmp/undo/')
+call s:auto_mkdir('tmp/swp/')
+
 set backup
 set backupdir=~/.vim/tmp/backup
 
