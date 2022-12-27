@@ -23,8 +23,8 @@ hi csRepeat ctermfg=82
 hi link csConditional csRepeat
 hi csComment ctermfg=65 ctermbg=NONE cterm=NONE
 " 補完ポップアップメニューの色を設定
-hi Pemnu ctermfg=231 ctermbg=238 cterm=NONE
-hi PemnuSel ctermfg=231 ctermbg=Blue cterm=NONE
+hi Pmenu ctermfg=231 ctermbg=238 cterm=NONE
+hi PmenuSel ctermfg=231 ctermbg=Blue cterm=NONE
 " アクティブステータスラインを設定
 hi StatusLine ctermfg=White ctermbg=60 cterm=bold
 " ここまでがカスタマイズした部分 End
