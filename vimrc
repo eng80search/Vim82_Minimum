@@ -58,10 +58,10 @@ function! s:auto_mkdir(dir)
 endfunction
 
 " 必要なディレクトリを作成
-call s:auto_mkdir('tmp/backup/')
-call s:auto_mkdir('tmp/viminfo/')
-call s:auto_mkdir('tmp/undo/')
-call s:auto_mkdir('tmp/swp/')
+call s:auto_mkdir($HOME .."/.vim/tmp/backup/")
+call s:auto_mkdir($HOME .."/.vim/tmp/viminfo/")
+call s:auto_mkdir($HOME .."/.vim/tmp/undo/")
+call s:auto_mkdir($HOME .."/.vim/tmp/swp/")
 
 set backup
 set backupdir=~/.vim/tmp/backup
