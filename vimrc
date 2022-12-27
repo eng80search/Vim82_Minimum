@@ -231,7 +231,7 @@ function! MakeTabLine()
 endfunction
 
 " 挿入、ノーマルモードでステータスラインの色を変える
-let g:hi_insert= 'highlight StatusLine gui=bold guifg=white guibg=darkred cterm=bold ctermfg=white ctermbg=Blue'
+let g:hi_insert= 'highlight StatusLine gui=bold guifg=white guibg=darkred cterm=bold ctermfg=white ctermbg=blue'
 if has('syntax')
     augroup InsertHook
         autocmd!
