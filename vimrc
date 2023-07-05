@@ -3,6 +3,18 @@ set runtimepath+=$HOME/.vim/vimfiles
 set runtimepath+=$HOME/.vim/vimfiles/after
 set nocompatible
 
+" 全角、半角スペースを強調表示(必ずcolorschemeの前に書くこと)
+augroup displaySpace
+    autocmd!
+    autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
+    autocmd VimEnter,WinEnter * call matchadd("FullWidthSpace", '　')
+
+    " 半角スペースのみの行を強調表示(必ずcolorschemeの前に書くこと)
+    autocmd Colorscheme * highlight OnlyHalfSpace ctermbg=240
+    " ハイライトされる部分の文字は必ずsingle quatationで囲むこと
+    autocmd VimEnter,WinEnter * call matchadd("OnlyHalfSpace", '\v\s+$')
+augroup END
+
 " テーマが反映されていない場合は次の設定をする
 set t_Co=256
 " テーマを指定
