@@ -32,7 +32,8 @@ hi StatusLine ctermfg=White ctermbg=60 cterm=bold
 " 次の行をコメントアウト　それ以降はelflord.vimと同じ
 " hi Normal  guifg=cyan   guibg=black
 
-hi Comment term=bold  ctermfg=DarkCyan  guifg=#80a0ff
+" hi Comment term=bold  ctermfg=DarkCyan  guifg=#80a0ff
+hi Comment term=bold  ctermfg=DarkGray  guifg=#80a0ff
 hi Constant term=underline ctermfg=Magenta  guifg=Magenta
 hi Special term=bold  ctermfg=DarkMagenta guifg=Red
 hi Identifier term=underline cterm=bold   ctermfg=Cyan guifg=#40ffff
