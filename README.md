@@ -55,3 +55,10 @@
     `$chcp 65001`  
     1. Shift-JISに変更  
     `$chcp 932`  
+- **編集**方法<br>
+    1. .を使う方法
+    1. マクロを使う方法
+    1. 置換を使う方法
+    1. [:range]g/pattern/cmd(例：normal @a s=original=new=g もしくは2jd)
+    1. argdo, tabdo, bufdoを使う方法
+    `argdo 1,10s/old/new/g`  
