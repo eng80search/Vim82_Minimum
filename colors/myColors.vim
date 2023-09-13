@@ -27,6 +27,12 @@ hi Pmenu ctermfg=231 ctermbg=238 cterm=NONE
 hi PmenuSel ctermfg=231 ctermbg=Blue cterm=NONE
 " アクティブステータスラインを設定
 hi StatusLine ctermfg=White ctermbg=60 cterm=bold
+
+" diffの色設定
+hi DiffAdd    cterm=bold ctermfg=10 ctermbg=17
+hi DiffDelete cterm=bold ctermfg=10 ctermbg=167
+hi DiffChange cterm=bold ctermfg=10 ctermbg=58
+hi DiffText   cterm=bold ctermfg=10 ctermbg=125
 " ここまでがカスタマイズした部分 End
 
 " 次の行をコメントアウト　それ以降はelflord.vimと同じ
